@@ -12,11 +12,11 @@ class Task {
         this.CompleteTest = false;
     }
 
-    public String getDescription() {
+    public String getTaskName() {
         return nameTest;
     }
 
-    public boolean isComplete() {
+    public boolean TestComplete() {
         return CompleteTest;
     }
 
@@ -37,8 +37,8 @@ public class ToDoTestt {
         tasks = new ArrayList<>();
     }
 
-    public void addTask(String description) {
-        tasks.add(new Task(description));
+    public void addTask(String nameTest) {
+        tasks.add(new Task(nameTest));
     }
 
     public void removeTask(int index) {
@@ -59,11 +59,11 @@ public class ToDoTestt {
     }
 
     public List<Task> getCompleteTasks() {
-        return tasks.stream().filter(Task::isComplete).toList();
+        return tasks.stream().filter(Task::TestComplete).toList();
     }
 
     public List<Task> getIncompleteTasks() {
-        return tasks.stream().filter(task -> !task.isComplete()).toList();
+        return tasks.stream().filter(task -> !task.TestComplete()).toList();
     }
 
     public void clearTasks() {
