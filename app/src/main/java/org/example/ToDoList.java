@@ -94,7 +94,7 @@ public class ToDoList {
         while (running) {
             System.out.println("\nWelcome to Your To-Do List!");
 
-            System.out.println("Here are Multiple Options for You, Please Pick One.");
+            System.out.println("Here are Multiple Options, Please Pick One Of Them.");
             System.out.println("1. Add a Task");
             System.out.println("2. Remove a Task");
             System.out.println("3. Mark a Task as Complete");
@@ -145,7 +145,7 @@ public class ToDoList {
 
                 case 8:
                 running = false;
-                System.out.println("Thank you for using the program!");
+                System.out.println("Thank you for using the program! Have a Nice Rest of Your Day :)");
             }
         }
         scanner.close();
